@@ -1,0 +1,26 @@
+
+// 使用自带的 Python3 (勿用Anaconda版)
+
+测试完成 我们还可将结果导出 {
+    pip3 install nose-htmloutput
+    [xml]   nosetest FILENAME -vs --with-xunit
+    [html]   nosetest FILENAME -vs --with-html
+}
+
+对测试结果着色 {
+    pip3 install rednose 
+    nosetests FILENAME -vs --rednose
+}
+
+nose for unittest test case {
+    you can use 'nosetests ./* -vs' to test them all 
+    (rather than using "python3 -m unittest" )
+}
+
+nose VS nose2 {
+    0)  nose is kinda of old (hmm..)
+    1)  for test loading
+            [nose]      lazy-loading, one by one 
+            [nose2]     loads all and then exec them all at once
+    2)  there's some dir layout which nose2 CANNOT distinguish correctly
+}

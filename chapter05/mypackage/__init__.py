@@ -1,0 +1,5 @@
+
+all = [
+    "mymathlib",
+    "mymathsimple"
+]

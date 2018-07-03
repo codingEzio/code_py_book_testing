@@ -1,0 +1,46 @@
+[Method]                        [Check]                             [Return]
+
+assertEqual(a,b)                a == b
+assertNotEqual
+
+assertTrue(x)                   bool(x) is True
+assertFalse
+
+assertIs(a,b)                   a is b
+assertIsNot
+
+assertIsNone(x)                 x is None 
+assertIsNotNone
+
+assertIn(a,b)                   a in b
+assertNotIn
+
+assertIsInstance(a,b)           isinstance(a,b)                     True/False
+assertNotIsInstance(a,b)        not isinstance(a,b)
+
+assertAlmostEqual(a,b)          round(a-b,7) == 0
+assertNotAlmostEqual(a,b)       round(a-b,7) != 0
+
+assertGreater(a,b)              a > b
+assertLess(a,b)
+
+assertGreaterEqual(a,b)         a >= b 
+assertLessEqual(a,b) 
+
+assertRegexpMatches(s,r)        r.search(s)
+assertNotRegexpMatches(s,r)
+
+assertItemsEqual(a,b)           sorted(a) == sorted(b)
+
+assertDictContainsSubset(a,b)   all the k/v pairs in a exist in b
+
+
+
+[Method]                        [Used-to-Compare]
+
+assertMultiLineEqual(a,b)       strings
+assertSequenceEqual(a,b)        sequences
+assertList  ...                 lists
+assertTuple ...                 tuples
+assertSet   ...                 sets or frozensets
+assertDict  ...                 dicts

@@ -1,0 +1,17 @@
+
+主要是不同风格的命名 如驼峰,下划线 etc.
+
+
+[Fixture]           [Alternative-Name]
+
+setUpPackage            setup_package
+tearDownPackage         teardown_package
+
+setUpModule             setup_module 
+tearDownModule          teardown_module
+
+setUpClass              setupClass, setup_class, setupAll, setUpAll
+tearDownClass           teardownClass, teardown_class, teardownAll, tearDownAll
+
+setUp (class method)        setup
+tearDown (class method)     teardown
