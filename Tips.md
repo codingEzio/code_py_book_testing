@@ -1,11 +1,12 @@
 ### Convention 
 - All test files should start with ```test_```
 	- also the file inside
-
-    	|:----|:----|
-    	| *function* | ```test_``` |
-    	| *class* | ```Test``` |
-    	| *method* | ```test_``` |
+		
+		| Type | Prefix | 
+		| :----: | ----: |
+		| *function* | ```test_``` |
+		| *class* | ```Test``` |
+		| *method* | ```test_``` |
 	
 - There should be a ```__init__.py``` file inside the test folder
 
